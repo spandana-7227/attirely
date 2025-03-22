@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Wardrobe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .category {
+            width: 60px; /* Initial small size */
+            height: 300px;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .category img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Enlarge image on hover */
+        .category:hover {
+            width: 200px; /* Enlarged size */
+        }
+
+        .category:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        Men's Wardrobe
+    </div>
+
+    <div class="container">
+        <h1>Men's Wardrobe</h1>
+        <p>Select a category to upload your clothes:</p>
+
+        <div class="gallery">
+            <div class="category" onclick="redirectToUpload('T-Shirts')">
+                <img src="c:\Users\WIN\Pictures\attirely\shirtsmen.jpg" alt="T-Shirts"></div>
+           
+            <div class="category" onclick="redirectToUpload('Jeans')">
+                <img src="c:\Users\WIN\Pictures\attirely\jeansmen.jpg" alt="Jeans"></div>
+
+            <div class="category" onclick="redirectToUpload('Trousers')">
+                <img src="c:\Users\WIN\Pictures\attirely\trousersmen.jpg" alt="Trousers"></div>
+
+            <div class="category" onclick="redirectToUpload('Jackets')">
+                <img src="c:\Users\WIN\Pictures\attirely\jacketsmen.jpg" alt="Jackets"></div>
+
+            <div class="category" onclick="redirectToUpload('Hoddies')">
+                <img src="c:\Users\WIN\Pictures\attirely\hoodiesmen.jpg" alt="Hoddies"></div>
+
+            <div class="category" onclick="redirectToUpload('Ethnic wear')">
+                <img src="c:\Users\WIN\Pictures\attirely\ethnic wear men.jpg" alt="Ethnic wear"></div>
+
+            <div class="category" onclick="redirectToUpload('Accesories')">
+                <img src="c:\Users\WIN\Pictures\attirely\accesoriesmen.jpg" alt="Accesories"></div>
+
+                <div class="category" onclick="redirectToUpload('Accesories')">
+                    <img src="c:\Users\WIN\Pictures\attirely\shoesmen.jpg" alt="Accesories"></div>
+            </div>
+    
+        </div>
+
+       
+
+           <script>
+        function redirectToUpload(category) {
+            window.location.href = "upload.html?category=" + category;
+        }
+    </script>
+
+
+</body>
+</html>

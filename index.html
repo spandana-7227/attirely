@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attirely - Personal Wardrobe Organizer</title>
+    <style>
+        /* Reset styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        /* Video Background */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Content Container */
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Heading */
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        /* Paragraph */
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Buttons */
+        .btn {
+            background: #ff9800;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            background: #e68900;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video class="video-background" autoplay loop muted>
+        <source src="C:\Users\WIN\Downloads\attirley backroundvideo.mp4" type="video/mp4">
+        
+    </video>
+
+    <!-- Content -->
+    <div class="container">
+        <h1>Welcome to Attirely</h1>
+        <p>Your personal wardrobe organizer, making fashion effortless.</p>
+        <button class="btn" onclick="redirectToLogin()">Login</button>
+        <button class="btn" onclick="redirectToCreate()">Create Account</button>
+    </div>
+
+    <script>
+        function redirectToLogin() {
+            window.location.href = "login.html";
+        }
+
+        function redirectToCreate() {
+            window.location.href = "create-account.html";
+        }
+    </script>
+
+</body>
+</html>
